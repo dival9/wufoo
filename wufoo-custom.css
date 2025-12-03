@@ -1,0 +1,158 @@
+/* ------------------------------
+   WUFOO FORM THEME — PRINCESS AUTO
+   Only using the `.wufoo` scope
+------------------------------ */
+
+.wufoo {
+  font-family: var(--t-font-family-body);
+  color: var(--t-content-text-primary);
+  background: var(--t-background-primary);
+  padding: var(--t-dimensions-6) var(--t-dimensions-4);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ----------------------------------
+   FORM HEADER
+---------------------------------- */
+.wufoo header.info h2 {
+  font-family: var(--t-font-family-heading);
+  font-size: var(--t-font-size-3xl);
+  margin-bottom: var(--t-dimensions-4);
+  color: var(--t-content-text-primary);
+}
+
+.wufoo header.info div {
+  font-size: var(--t-font-size-md);
+  color: var(--t-content-text-secondary);
+  margin-bottom: var(--t-dimensions-6);
+}
+
+/* ----------------------------------
+   FORM LABELS
+---------------------------------- */
+.wufoo label.desc {
+  font-weight: var(--t-font-weight-bold);
+  font-size: var(--t-font-size-md);
+  margin-bottom: var(--t-dimensions-1);
+  display: block;
+  color: var(--t-content-text-primary);
+}
+
+.wufoo .req {
+  color: var(--t-content-text-support-negative);
+  margin-left: 2px;
+}
+
+/* ----------------------------------
+   INPUTS / TEXTAREAS / SELECTS
+---------------------------------- */
+.wufoo input[type="text"],
+.wufoo input[type="email"],
+.wufoo input[type="tel"],
+.wufoo textarea,
+.wufoo select {
+  width: 100%;
+  padding: var(--t-dimensions-3);
+  border-radius: 4px;
+  border: 1px solid var(--t-field-border-primary);
+  background: var(--t-field-background-primary);
+  font-size: var(--t-font-size-md);
+  color: var(--t-field-text-primary);
+  transition: all 0.2s ease;
+}
+
+.wufoo input:hover,
+.wufoo textarea:hover,
+.wufoo select:hover {
+  border-color: var(--t-field-border-primary-hover);
+}
+
+.wufoo input:focus,
+.wufoo textarea:focus,
+.wufoo select:focus {
+  border-color: var(--t-field-border-focus);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--t-background-support-info);
+}
+
+/* ----------------------------------
+   WUFOO CUSTOM DROPDOWN (THE WRAPPER)
+---------------------------------- */
+.wufoo .wufoo-dropdown-control {
+  padding: var(--t-dimensions-3);
+  border: 1px solid var(--t-field-border-primary);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--t-field-background-primary);
+  font-size: var(--t-font-size-md);
+}
+
+.wufoo .wufoo-dropdown-control .text {
+  color: var(--t-field-text-primary);
+}
+
+.wufoo .wufoo-dropdown-control:hover {
+  border-color: var(--t-border-primary-hover);
+}
+
+/* ----------------------------------
+   FILE UPLOAD
+---------------------------------- */
+.wufoo .wufoo-file-upload {
+  border: 1px dashed var(--t-border-secondary);
+  padding: var(--t-dimensions-5);
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.wufoo .wufoo-file-upload:hover {
+  border-color: var(--t-border-primary-hover);
+  background: var(--t-background-tertiary);
+}
+
+.wufoo .wufoo-file-upload p {
+  font-size: var(--t-font-size-md);
+  margin-bottom: var(--t-dimensions-1);
+}
+
+.wufoo .wufoo-file-upload small {
+  color: var(--t-content-text-secondary);
+}
+
+/* ----------------------------------
+   BUTTONS
+---------------------------------- */
+.wufoo input[type="submit"] {
+  background: var(--t-button-background-primary);
+  color: var(--t-button-text-primary);
+  padding: var(--t-dimensions-3) var(--t-dimensions-6);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--t-font-size-md);
+  font-weight: var(--t-font-weight-bold);
+  transition: background 0.2s ease;
+}
+
+.wufoo input[type="submit"]:hover {
+  background: var(--t-button-background-primary-hover);
+}
+
+/* ----------------------------------
+   MOBILE RESPONSIVE
+---------------------------------- */
+@media (max-width: var(--t-breakpoint-tablet)) {
+  .wufoo {
+    padding: var(--t-dimensions-4) var(--t-dimensions-2);
+  }
+
+  .wufoo header.info h2 {
+    font-size: var(--t-font-size-2xl);
+  }
+}
