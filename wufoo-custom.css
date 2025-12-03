@@ -1,13 +1,12 @@
 /* ------------------------------
    WUFOO FORM THEME — PRINCESS AUTO
-   Only using the `.wufoo` scope
 ------------------------------ */
 
 .wufoo {
-  font-family: var(--t-font-family-body);
-  color: var(--t-content-text-primary);
-  background: var(--t-background-primary);
-  padding: var(--t-dimensions-6) var(--t-dimensions-4);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  padding: 32px 16px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -16,31 +15,31 @@
    FORM HEADER
 ---------------------------------- */
 .wufoo header.info h2 {
-  font-family: var(--t-font-family-heading);
-  font-size: var(--t-font-size-3xl);
-  margin-bottom: var(--t-dimensions-4);
-  color: var(--t-content-text-primary);
+  font-family: "Arial Black", sans-serif;
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #1a1a1a;
 }
 
 .wufoo header.info div {
-  font-size: var(--t-font-size-md);
-  color: var(--t-content-text-secondary);
-  margin-bottom: var(--t-dimensions-6);
+  font-size: 16px;
+  color: #6b6b6b;
+  margin-bottom: 24px;
 }
 
 /* ----------------------------------
    FORM LABELS
 ---------------------------------- */
 .wufoo label.desc {
-  font-weight: var(--t-font-weight-bold);
-  font-size: var(--t-font-size-md);
-  margin-bottom: var(--t-dimensions-1);
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 4px;
   display: block;
-  color: var(--t-content-text-primary);
+  color: #1a1a1a;
 }
 
 .wufoo .req {
-  color: var(--t-content-text-support-negative);
+  color: #d32f2f;
   margin-left: 2px;
 }
 
@@ -53,58 +52,58 @@
 .wufoo textarea,
 .wufoo select {
   width: 100%;
-  padding: var(--t-dimensions-3);
+  padding: 12px;
   border-radius: 4px;
-  border: 1px solid var(--t-field-border-primary);
-  background: var(--t-field-background-primary);
-  font-size: var(--t-font-size-md);
-  color: var(--t-field-text-primary);
+  border: 1px solid #c7c7c7;
+  background: #ffffff;
+  font-size: 16px;
+  color: #1a1a1a;
   transition: all 0.2s ease;
 }
 
 .wufoo input:hover,
 .wufoo textarea:hover,
 .wufoo select:hover {
-  border-color: var(--t-field-border-primary-hover);
+  border-color: #999999;
 }
 
 .wufoo input:focus,
 .wufoo textarea:focus,
 .wufoo select:focus {
-  border-color: var(--t-field-border-focus);
+  border-color: #0066cc;
   outline: none;
-  box-shadow: 0 0 0 2px var(--t-background-support-info);
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
 }
 
 /* ----------------------------------
    WUFOO CUSTOM DROPDOWN (THE WRAPPER)
 ---------------------------------- */
 .wufoo .wufoo-dropdown-control {
-  padding: var(--t-dimensions-3);
-  border: 1px solid var(--t-field-border-primary);
+  padding: 12px;
+  border: 1px solid #c7c7c7;
   border-radius: 4px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--t-field-background-primary);
-  font-size: var(--t-font-size-md);
+  background: #ffffff;
+  font-size: 16px;
 }
 
 .wufoo .wufoo-dropdown-control .text {
-  color: var(--t-field-text-primary);
+  color: #1a1a1a;
 }
 
 .wufoo .wufoo-dropdown-control:hover {
-  border-color: var(--t-border-primary-hover);
+  border-color: #999999;
 }
 
 /* ----------------------------------
    FILE UPLOAD
 ---------------------------------- */
 .wufoo .wufoo-file-upload {
-  border: 1px dashed var(--t-border-secondary);
-  padding: var(--t-dimensions-5);
+  border: 1px dashed #d4d4d4;
+  padding: 20px;
   border-radius: 6px;
   cursor: pointer;
   text-align: center;
@@ -112,47 +111,47 @@
 }
 
 .wufoo .wufoo-file-upload:hover {
-  border-color: var(--t-border-primary-hover);
-  background: var(--t-background-tertiary);
+  border-color: #999999;
+  background: #f4f4f4;
 }
 
 .wufoo .wufoo-file-upload p {
-  font-size: var(--t-font-size-md);
-  margin-bottom: var(--t-dimensions-1);
+  font-size: 16px;
+  margin-bottom: 4px;
 }
 
 .wufoo .wufoo-file-upload small {
-  color: var(--t-content-text-secondary);
+  color: #6b6b6b;
 }
 
 /* ----------------------------------
    BUTTONS
 ---------------------------------- */
 .wufoo input[type="submit"] {
-  background: var(--t-button-background-primary);
-  color: var(--t-button-text-primary);
-  padding: var(--t-dimensions-3) var(--t-dimensions-6);
+  background: #0051a3;
+  color: #ffffff;
+  padding: 12px 24px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: var(--t-font-size-md);
-  font-weight: var(--t-font-weight-bold);
+  font-size: 16px;
+  font-weight: 700;
   transition: background 0.2s ease;
 }
 
 .wufoo input[type="submit"]:hover {
-  background: var(--t-button-background-primary-hover);
+  background: #003f82;
 }
 
 /* ----------------------------------
    MOBILE RESPONSIVE
 ---------------------------------- */
-@media (max-width: var(--t-breakpoint-tablet)) {
+@media (max-width: 768px) {
   .wufoo {
-    padding: var(--t-dimensions-4) var(--t-dimensions-2);
+    padding: 16px 8px;
   }
 
   .wufoo header.info h2 {
-    font-size: var(--t-font-size-2xl);
+    font-size: 24px;
   }
 }
